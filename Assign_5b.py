@@ -7,3 +7,4 @@ try:
 	Calc(Fah1)
 except:
 	print("not valid")
+	
