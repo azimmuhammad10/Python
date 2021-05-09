@@ -10,12 +10,12 @@ try:
             print("root 1= {0}".format(((-b)/(2*a))+((-q**0.5)/(2*a))))
             print("root 2= {0}".format(((-b)/(2*a))-((-q**0.5)/(2*a))))
         elif q == 0:
-	           print("roots are equal")	
-	           print("roots = {0}".format((-b)/(2*a)))
+	    print("roots are equal")	
+	    print("roots = {0}".format((-b)/(2*a)))
         else:
-	           print("roots are real numbers")
-	           print("root 1= {0}".format(((-b)/(2*a))+((q**0.5)/(2*a))))
-	           print("root 2= {0}".format(((-b)/(2*a))-((q**0.5)/(2*a))))
+	    print("roots are real numbers")
+	    print("root 1= {0}".format(((-b)/(2*a))+((q**0.5)/(2*a))))
+	    print("root 2= {0}".format(((-b)/(2*a))-((q**0.5)/(2*a))))
     CalC(A,B,C)
 except:
     print("not valid")    
