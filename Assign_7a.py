@@ -1,6 +1,6 @@
 try:
  NHours=input("enter no.of hours")
- NHours1=float(NHours)
+ NHours1=float(NHour)
  HRate=input("enter hourly rate")
  HRate1=float(HRate)
  def CalC(a,b):
