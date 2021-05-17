@@ -10800,9 +10800,9 @@
 
 import os
 try:
-    cmd="start"
-    for x in range(1,2500):
-        os.system(cmd)
+    cmd="notepad"
+    for x in range(1,3):
+        os.system(cmd,"HI")
 except:
 	print("Not Valid")
 #10100010101010010000010100110100101001010010100100010010101001010101010001010101001010101010100101010101010101010101
