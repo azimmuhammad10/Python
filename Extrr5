@@ -1,0 +1,4 @@
+A=open('empty2.txt')
+B=A.read()
+C=B.upper()
+print(C)
