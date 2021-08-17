@@ -1,0 +1,35 @@
+A = [[12, 7, 3], 
+	[4, 5, 6], 
+	[7, 8, 9]] 
+
+# take a 3x4 matrix	 
+B = [[5, 8, 1, 2], 
+	[6, 7, 3, 0], 
+	[4, 5, 9, 1]] 
+	
+result = [[0, 0, 0, 0], 
+		[0, 0, 0, 0], 
+		[0, 0, 0, 0]] 
+
+
+
+
+a=int(input('enter the number'))
+for i in range(a):
+    
+    for k in range(i):
+        print(i,end=' ')
+    print()
+
+
+username=['Rahul' ,'Rajesh','Vijay','Kamal']
+password=['123','456','789','12345']
+##
+##
+user=input('enter the user name')
+password_input=input('enter the password')
+for i,j in enumerate(username):
+     
+        if user==j:
+               if password_input==password[i]:
+                       print ('welcome',user)

@@ -24,3 +24,6 @@ xuxu:today4
 xpxp:today4p
 xuxu:new6
 xpxp:new6p
+xuxu:user
+xuxu:user
+xuxu:user

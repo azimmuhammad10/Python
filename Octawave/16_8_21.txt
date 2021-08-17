@@ -1,0 +1,49 @@
+Program 2
+import math
+
+a = input(" enter the no " )
+b = input(' enter the no ' )
+c = input(' enter the no ' )
+
+s = (a+b+c)/2
+
+area1 = ((s*(s-a)*(s-b)*(s-c)))**0.5
+#area2= math.sqrt(((s*(s-a)*(s-b)*(s-c))))
+#print(dir(math))
+print area1
+manjunath shet06:45
+Program 3 :
+# Python program to show
+# bitwise operators
+ 
+a = 10
+b = 4
+ 
+# Print bitwise AND operation
+print("a & b =", a & b)
+ 
+# Print bitwise OR operation
+print("a | b =", a | b)
+ 
+# Print bitwise NOT operation
+print("~a =", ~a)
+ 
+# print bitwise XOR operation
+print("a ^ b =", a ^ b)
+manjunath shet06:48
+Program 4:
+a=17
+b=7
+c=1
+if a<b:
+    if a<c:
+        print ('smallest',a)
+    else:
+        print('smallest',c)
+else:
+    if b<c:
+        print('smallest',b)
+    else:
+        print('smallest',c)
+manjunath shet06:50
+ Assignment 1:Sort 4 numbers and and print in ascending order .

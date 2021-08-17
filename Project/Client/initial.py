@@ -11,7 +11,7 @@ class CalC:#Main Class
  """
  def Sock(self):
   s = socket.socket()
-  s.connect(('127.0.0.1',80))
+  s.connect(('127.0.0.1',987))
   a="send"
   s.send(a.encode());
   g=s.recv(1024).decode()
@@ -20,14 +20,14 @@ class CalC:#Main Class
 
  def SockAppend(self,a):
   s = socket.socket()
-  s.connect(('127.0.0.1',80))
+  s.connect(('43.247.157.186',987))
   sa=a
   s.send(sa.encode())
   s.close()
 
  def SockAppendPass(self,a):
   s = socket.socket()
-  s.connect(('127.0.0.1',80))
+  s.connect(('43.247.157.186',987))
   sa="receivepass"+":"+a
   s.send(sa.encode())
   s.close()
@@ -149,6 +149,25 @@ class CalC:#Main Class
    b,c=CalC().LoginMain()
   return b,c
 
+ def Connection(self,d) :
+  s = socket.socket()
+  s.connect(('127.0.0.1',987))
+  a=d
+  s.send(a.encode());
+  g=s.recv(1024).decode()
+  s.close()
+  return g
+ 
+ def Dashboard3(self,a,b):
+  self.a=a
+  if self.a=="inbox" :
+   CalC().Connection(b)
+  elif self.a=="compose":
+   CalC().Connection(self.a)
+  elif self.a=="switch":
+   CalC().Connection(self.a)
+
+
  def Dashboard(self,a):
   self.a=a
   self.c=""
@@ -158,6 +177,8 @@ class CalC:#Main Class
     print(Back.WHITE+Fore.RED+Style.DIM+"----||switch - Switch Account --- exit - Exit||----")
     print(Back.RED+Fore.WHITE)
     self.c=input("Enter Command")
+    CalC().Dashboard3(self.c,self.a)
+    
   
    
    # break

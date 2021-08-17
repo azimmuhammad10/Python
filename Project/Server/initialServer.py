@@ -5,7 +5,7 @@ class CalC:
  def SocketSocket(self):
   a=""
   s = socket.socket()
-  port = 80
+  port = 987
   s.bind(('', port))
   s.listen(5)
   while True :
@@ -27,10 +27,24 @@ class CalC:
     l="\nxpxp:{0}".format(bbbb)
     k.write(l)
     k.close()
+    c.close()
    else :
     g=open("data.txt","a")
     h="\nxuxu:{0}".format(b)
     g.write(h)
     g.close()
+    c.close()
+    break
+  while True:
+   aa,addr3=s.accept()
+   print("Received request from:",addr3) 
+   bb=aa.recv(1024).decode()
+   cc=open(bb,"a")
+   for x in cc:
+    print(x)
+   cc.close()
+   aa.close()
+
+
 A=CalC()
 A.SocketSocket()
